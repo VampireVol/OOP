@@ -23,12 +23,3 @@ QString Rhombus::toString ()
             .arg (this->_b)
             .arg (this->_alpha);
 }
-
-//ostream& operator<< (ostream &out, const Rhombus *obj)
-//{
-//    out << "Rhombus: "
-//        << "a: "    << obj->_a
-//        << "b: "    << obj->_b
-//        << "alpha: "<< obj->_alpha;
-//    return out;
-//}

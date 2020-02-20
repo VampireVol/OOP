@@ -31,15 +31,3 @@ QString Quadrangle::toString ()
             .arg (this->_alpha)
             .arg (this->_beta);
 }
-
-//ostream& operator<< (ostream &out, const Quadrangle *obj)
-//{
-//    out << "Quadrangle: "
-//        << "a: "    << obj->_a
-//        << "b: "    << obj->_b
-//        << "c: "    << obj->_c
-//        << "d: "    << obj->_d
-//        << "alpha: "<< obj->_alpha
-//        << "beta: " << obj->_beta;
-//    return out;
-//}

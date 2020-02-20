@@ -22,11 +22,3 @@ QString Rectangle::toString ()
             .arg (this->_a)
             .arg (this->_b);
 }
-
-//ostream& operator<< (ostream &out, const Rectangle *obj)
-//{
-//    out << "Rectangle: "
-//        << "a: "    << obj->_a
-//        << "b: "    << obj->_b;
-//    return out;
-//}

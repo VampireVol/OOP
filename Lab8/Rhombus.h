@@ -9,8 +9,6 @@ public:
     double area () override;
     double perimetr () override;
     QString toString () override;
-    //friend ostream& operator<< (ostream &out, const Rhombus *obj);
-
 };
 
 #endif // RHOMBUS_H

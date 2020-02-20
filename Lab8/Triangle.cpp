@@ -25,12 +25,3 @@ QString Triangle::toString ()
             .arg (this->_b)
             .arg (this->_alpha);
 }
-
-//ostream& operator<< (ostream &out, const Triangle *obj)
-//{
-//    out << "Triangle: "
-//        << "a: "        << obj->_a
-//        << "b: "        << obj->_b
-//        << "alpha: "    << obj->_alpha;
-//    return out;
-//}

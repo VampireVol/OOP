@@ -12,7 +12,6 @@ public:
     double area () override;
     double perimetr () override;
     QString toString () override;
-    //friend ostream& operator<< (ostream &out, const Quadrangle *obj);
 protected:
     double _a;
     double _b;

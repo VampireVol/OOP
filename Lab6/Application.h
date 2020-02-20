@@ -14,14 +14,15 @@ public:
     virtual ~Application ();
 
     int exec ();
-
+signals:
+    void printNext ();
 private slots:
     void slotAddSample (SampleData &data);
 private:
     InterfaceWindow *_interfaceWindow {nullptr};
-    Painter *_painter {nullptr};
     Canvas *_canvas {nullptr};
-    QList<Sample> _list;
+    Painter *_painter {nullptr};
+    QList<Sample*> _list;
 };
 
 #endif // APPLICATION_H

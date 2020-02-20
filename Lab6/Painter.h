@@ -5,13 +5,17 @@
 
 #include "Sample.h"
 
-class Painter : public QPainter
+class Painter
 {
+
 public:
     Painter ();
-    void setList (QList<Sample> *list);
+    virtual ~Painter ();
+    void setList (QList<Sample*> *list);
+    QPolygon print (int i);
+    int sizeList ();
 private:
-    QList<Sample> *_list;
+    QList<Sample*> *_list;
 };
 
 #endif // PAINTER_H

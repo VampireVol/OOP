@@ -14,10 +14,16 @@ class Canvas : public QWidget
 
 public:
     explicit Canvas (QWidget *parent = nullptr);
-    ~Canvas ();
+    ~Canvas () override;
     void setPainter (Painter *painter);
-
+public slots:
+    void slotPrintNext ();
+signals:
+    void sendPivot (int x, int y);
+private slots:
+    void mousePressEvent (QMouseEvent *event) override;
 private:
+    void paintEvent (QPaintEvent *event) override;
     Ui::Canvas *_ui;
     Painter *_painter;
 };

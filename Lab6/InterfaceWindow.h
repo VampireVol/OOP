@@ -15,11 +15,15 @@ class InterfaceWindow : public QWidget
 public:
     InterfaceWindow (QWidget *parent = nullptr);
     ~InterfaceWindow ();
+public slots:
+    void setPivot (int x, int y);
 signals:
     void sendData (SampleData &data);
+    void printNext ();
 private slots:
     void slotAddButton ();
     void enableAddButton ();
+    void switchLineEdit ();
 
 private:
     Ui::InterfaceWindow *_ui;

@@ -1,6 +1,8 @@
 #ifndef SAMPLE_H
 #define SAMPLE_H
 #include <QPointF>
+#include <QPolygon>
+#include "Triangles.h"
 
 struct SampleData
 {
@@ -11,14 +13,14 @@ struct SampleData
         EquilateralTriangle
     };
 
-    SampleData (Type type, double x, double y/*, double a, double b, double c*/);
+    SampleData (Type type, int x, int y, double a, double b, double c);
 
     Type _type {Triangle};
-    double _x;
-    double _y;
-//    double _a;
-//    double _b;
-//    double _c;
+    int _x;
+    int _y;
+    double _a;
+    double _b;
+    double _c;
 };
 
 class Sample
@@ -26,8 +28,10 @@ class Sample
 public:
     Sample (SampleData &data);
     ~Sample ();
-
-    QPointF *_pivot;
+    QPolygon getPolygon ();
+private:
+    Triangle *_triangle {nullptr};
+    QPoint *_pivot;
     SampleData::Type _type {SampleData::Triangle};
 };
 

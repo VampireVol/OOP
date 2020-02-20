@@ -6,8 +6,6 @@ class Rhombus : virtual public Parallelogram
 {
 public:
     Rhombus (double a, double alpha);
-    double area () override;
-    double perimetr () override;
     QString toString () override;
 };
 

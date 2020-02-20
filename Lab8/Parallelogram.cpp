@@ -6,16 +6,6 @@ Parallelogram::Parallelogram (double a, double b, double alpha)
 
 }
 
-double Parallelogram::area ()
-{
-    return _a * _b * cos (_alpha * PI / 180);
-}
-
-double Parallelogram::perimetr ()
-{
-    return 2 * (_a + _b);
-}
-
 QString Parallelogram::toString ()
 {
     return QString ("Parallelogram: a: %1 b: %2 alpha: %3")

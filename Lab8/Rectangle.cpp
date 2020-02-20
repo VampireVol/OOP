@@ -6,16 +6,6 @@ Rectangle::Rectangle (double a, double b)
 
 }
 
-double Rectangle::area ()
-{
-    return _a * _b;
-}
-
-double Rectangle::perimetr ()
-{
-    return 2 * (_a + _b);
-}
-
 QString Rectangle::toString ()
 {
     return QString ("Rectangle: a: %1 b: %2")

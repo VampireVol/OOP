@@ -6,16 +6,6 @@ Square::Square (double a)
 
 }
 
-double Square::area ()
-{
-    return _a * _a;
-}
-
-double Square::perimetr ()
-{
-    return 4 * _a;
-}
-
 QString Square::toString ()
 {
     return QString ("Square: a: %1")

@@ -7,8 +7,6 @@ class Square : public Rectangle, public Rhombus
 {
 public:
     Square(double a);
-    double area() override;
-    double perimetr() override;
     QString toString () override;
 };
 

@@ -6,8 +6,6 @@ class Rectangle : virtual public Parallelogram
 {
 public:
     Rectangle (double a, double b);
-    double area () override;
-    double perimetr () override;
     QString toString () override;
 };
 

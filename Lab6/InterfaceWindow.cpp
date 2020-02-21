@@ -70,7 +70,7 @@ void InterfaceWindow::slotAddButton ()
     {
         double a = _ui->_lineEditA->text ().toDouble ();
         double b = _ui->_lineEditB->text ().toDouble ();
-        if (a >= 2 * b) {
+        if (a >= 2 * b || b >= 2 * a) {
             qDebug () << "[InterfaceWindow][slotAddButton] ab not corret";
             return;
         }

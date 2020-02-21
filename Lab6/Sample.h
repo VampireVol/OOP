@@ -31,7 +31,7 @@ public:
     QPolygon getPolygon ();
 private:
     Triangle *_triangle {nullptr};
-    QPoint *_pivot;
+    QPoint *_pivot {nullptr};
     SampleData::Type _type {SampleData::Triangle};
 };
 

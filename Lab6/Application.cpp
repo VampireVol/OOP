@@ -25,6 +25,9 @@ Application::~Application ()
         delete _painter;
     if (_canvas)
         delete _canvas;
+    for (int i = 0; i < _list.size (); ++i)
+        if (_list[i])
+            delete _list[i];
 }
 
 int Application::exec ()

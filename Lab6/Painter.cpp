@@ -20,7 +20,7 @@ QPolygon Painter::print (int i)
     return (_list->at(i)->getPolygon ());
 }
 
-int Painter::sizeList()
+int Painter::sizeList ()
 {
     return _list->size ();
 }

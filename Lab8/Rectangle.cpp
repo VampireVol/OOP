@@ -9,6 +9,6 @@ Rectangle::Rectangle (double a, double b)
 QString Rectangle::toString ()
 {
     return QString ("Rectangle: a: %1 b: %2")
-            .arg (this->_a)
-            .arg (this->_b);
+            .arg (_edge[0])
+            .arg (_edge[1]);
 }

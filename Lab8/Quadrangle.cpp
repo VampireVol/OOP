@@ -1,33 +1,22 @@
 #include "Quadrangle.h"
 
-Quadrangle::Quadrangle (double a, double b,
-                        double c, double d,
+Quadrangle::Quadrangle (double a, double b, double c,
                         double alpha, double beta)
-    : _a (a), _b (b)
-    , _c (c), _d (d)
-    , _alpha (alpha)
-    , _beta (beta)
 {
-
-}
-
-double Quadrangle::area ()
-{
-    return 0.5 * _a * _b * sin (_alpha * PI / 180) + 0.5 * _c * _d * sin (_beta * PI / 180);
-}
-
-double Quadrangle::perimetr ()
-{
-    return _a + _b + _c + _d;
+    _edge.append (a);
+    _edge.append (b);
+    _edge.append (c);
+    _angle.append (alpha);
+    _angle.append (beta);
+    calcInternal ();
 }
 
 QString Quadrangle::toString ()
 {
-    return QString ("Quadrangle: a: %1 b: %2 c: %3 d: %4 alpha: %5 beta: %6")
-            .arg (this->_a)
-            .arg (this->_b)
-            .arg (this->_c)
-            .arg (this->_d)
-            .arg (this->_alpha)
-            .arg (this->_beta);
+    return QString ("Quadrangle: a: %1 b: %2 c: %3 alpha: %4 beta: %5")
+            .arg (_edge[0])
+            .arg (_edge[1])
+            .arg (_edge[2])
+            .arg (_angle[0])
+            .arg (_angle[1]);
 }

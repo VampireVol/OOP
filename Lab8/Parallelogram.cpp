@@ -1,7 +1,7 @@
 #include "Parallelogram.h"
 
 Parallelogram::Parallelogram (double a, double b, double alpha)
-    : Quadrangle (a, b, a, b, alpha, alpha)
+    : Quadrangle (a, b, a, alpha, 180 - alpha)
 {
 
 }
@@ -9,7 +9,7 @@ Parallelogram::Parallelogram (double a, double b, double alpha)
 QString Parallelogram::toString ()
 {
     return QString ("Parallelogram: a: %1 b: %2 alpha: %3")
-            .arg (this->_a)
-            .arg (this->_b)
-            .arg (this->_alpha);
+            .arg (_edge[0])
+            .arg (_edge[1])
+            .arg (_angle[0]);
 }

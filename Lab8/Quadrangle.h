@@ -5,20 +5,9 @@
 class Quadrangle : public Polygon
 {
 public:
-    explicit Quadrangle (double a, double b,
-                         double c, double d,
+    explicit Quadrangle (double a, double b, double c,
                          double alpha, double beta);
-
-    double area () override;
-    double perimetr () override;
     QString toString () override;
-protected:
-    double _a;
-    double _b;
-    double _c;
-    double _d;
-    double _alpha;
-    double _beta;
 };
 
 #endif // QUADRANGLE_H

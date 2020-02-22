@@ -1,8 +1,10 @@
 #include <QCoreApplication>
+#include "TApplication.h"
+#include "math.h"
 
-int main(int argc, char *argv[])
+int main ()
 {
-    QCoreApplication a(argc, argv);
+    TApplication a;
 
-    return a.exec();
+    return a.exec ();
 }

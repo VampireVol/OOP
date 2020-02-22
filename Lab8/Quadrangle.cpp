@@ -1,7 +1,7 @@
 #include "Quadrangle.h"
 
-Quadrangle::Quadrangle (double a, double b, double c,
-                        double alpha, double beta)
+Quadrangle::Quadrangle (const double &a, const double &b, const double &c,
+                        const double &alpha, const double &beta)
 {
     _edge.append (a);
     _edge.append (b);

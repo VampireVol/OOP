@@ -5,7 +5,7 @@ Polygon::Polygon ()
 
 }
 
-Polygon::Polygon (QList<double> &edge, QList<double> &angle)
+Polygon::Polygon (const QList<double> &edge, const QList<double> &angle)
     : _edge (edge), _angle (angle)
 {
     calcInternal ();

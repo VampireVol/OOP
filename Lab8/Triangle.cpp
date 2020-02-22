@@ -1,6 +1,6 @@
 #include "Triangle.h"
 
-Triangle::Triangle (double a, double b, double angle)
+Triangle::Triangle (const double &a, const double &b, const double &angle)
 {
     _edge.append (a);
     _edge.append (b);

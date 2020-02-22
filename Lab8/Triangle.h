@@ -5,7 +5,7 @@
 class Triangle : public Polygon
 {
 public:
-    Triangle (double a, double b, double angle);
+    Triangle (const double &a, const double &b, const double &angle);
     QString toString () override;
 };
 

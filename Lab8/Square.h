@@ -6,7 +6,7 @@
 class Square : public Rectangle, public Rhombus
 {
 public:
-    Square(double a);
+    Square(const double &a);
     QString toString () override;
 };
 

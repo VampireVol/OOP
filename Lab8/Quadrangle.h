@@ -5,8 +5,8 @@
 class Quadrangle : public Polygon
 {
 public:
-    explicit Quadrangle (double a, double b, double c,
-                         double alpha, double beta);
+    explicit Quadrangle (const double &a, const double &b, const double &c,
+                         const double &alpha, const double &beta);
     QString toString () override;
 };
 

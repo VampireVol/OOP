@@ -5,7 +5,7 @@
 class Parallelogram : public Quadrangle
 {
 public:
-    Parallelogram (double a, double b, double alpha);
+    Parallelogram (const double &a, const double &b, const double &alpha);
     QString toString () override;
 };
 

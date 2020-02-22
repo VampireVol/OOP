@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 
-Rectangle::Rectangle (double a, double b)
+Rectangle::Rectangle (const double &a, const double &b)
     : Parallelogram (a , b, 90)
 {
 

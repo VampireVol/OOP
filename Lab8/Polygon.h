@@ -12,7 +12,7 @@ class Polygon
 {
 public:
     Polygon ();
-    Polygon (QList<double> &edge, QList<double> &angle);
+    Polygon (const QList<double> &edge, const QList<double> &angle);
     virtual ~Polygon ();
 
     double area ();

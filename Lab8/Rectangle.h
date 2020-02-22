@@ -5,7 +5,7 @@
 class Rectangle : virtual public Parallelogram
 {
 public:
-    Rectangle (double a, double b);
+    Rectangle (const double &a, const double &b);
     QString toString () override;
 };
 

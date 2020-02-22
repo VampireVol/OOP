@@ -1,6 +1,6 @@
 #include "Rhombus.h"
 
-Rhombus::Rhombus (double a, double alpha)
+Rhombus::Rhombus (const double &a, const double &alpha)
     : Parallelogram (a, a, alpha)
 {
 

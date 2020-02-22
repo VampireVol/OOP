@@ -5,7 +5,7 @@
 class Rhombus : virtual public Parallelogram
 {
 public:
-    Rhombus (double a, double alpha);
+    Rhombus (const double &a, const double &alpha);
     QString toString () override;
 };
 

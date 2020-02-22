@@ -7,6 +7,7 @@ class TApplication
 public:
     TApplication ();
     int exec ();
+    void menu ();
 };
 
 #endif // TAPPLICATION_H

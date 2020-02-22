@@ -1,7 +1,7 @@
 #ifndef NUMBER_H
 #define NUMBER_H
 
-#include "Complex.h"
+//#include "Complex.h"
 
 typedef double number;
 

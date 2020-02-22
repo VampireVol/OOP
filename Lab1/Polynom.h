@@ -7,11 +7,13 @@ using namespace std;
 
 //!
 //! \brief Класс полинома второй степени
-//! \author Balanin Sergey
 //!
 class Polynom
 {
 public:
+    //! \brief Конструктор
+    Polynom ();
+
     //! \brief Конструктор
     //! \param a
     //! \param b

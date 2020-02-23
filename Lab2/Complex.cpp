@@ -57,7 +57,7 @@ bool operator== (const Complex &left, const double &right)
 Complex sqrt (const Complex &n)
 {
     double r = sqrt(n._real * n._real + n._img * n._img);
-    double phi = atan(n._img / n._real);
+    double phi = acos (n._real / r);
     return Complex (sqrt(r) * (cos(phi / 2)), sqrt(r) * (sin(phi / 2)));
 }
 

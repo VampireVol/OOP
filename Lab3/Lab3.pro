@@ -17,10 +17,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    TInterface.cpp
+    TInterface.cpp \
+    Complex.cpp \
+    Polynom.cpp \
 
 HEADERS += \
-    TInterface.h
+    TInterface.h \
+    Complex.h \
+    Polynom.h \
+    Number.h
 
 FORMS += \
     TInterface.ui

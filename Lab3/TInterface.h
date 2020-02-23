@@ -2,6 +2,8 @@
 #define TINTERFACE_H
 
 #include <QWidget>
+#include "Polynom.h"
+#include "Number.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class TInterface; }
@@ -12,10 +14,15 @@ class TInterface : public QWidget
     Q_OBJECT
 
 public:
-    TInterface(QWidget *parent = nullptr);
-    ~TInterface();
+    TInterface (QWidget *parent = nullptr);
+    ~TInterface ();
+
+private slots:
+    void slotShow ();
+    void slotCalc ();
 
 private:
     Ui::TInterface *ui;
+    Polynom _p;
 };
 #endif // TINTERFACE_H

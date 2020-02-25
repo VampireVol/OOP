@@ -11,7 +11,6 @@ class Polynom
 public:
     Polynom ();
     Polynom (number a, number b, number c);
-
     int roots (number *x);
     QString toString ();
 

@@ -6,12 +6,10 @@
 
 class TApplication : public QCoreApplication
 {
-    //Q_OBJECT
 public:
     TApplication (int & argc ,char** argv);
     ~TApplication ();
     int exec ();
-
 private slots:
     void doCommand (const QString &data);
 private:

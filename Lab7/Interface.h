@@ -2,6 +2,7 @@
 #define INTERFACE_H
 
 #include <QWidget>
+#include "Sample.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Interface; }
@@ -14,7 +15,11 @@ class Interface : public QWidget
 public:
     Interface(QWidget *parent = nullptr);
     ~Interface();
-
+signals:
+    void sendData (const SampleData &data);
+private slots:
+    void slotSampleType ();
+    void slotCheckType ();
 private:
     Ui::Interface *ui;
 };

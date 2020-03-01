@@ -7,6 +7,7 @@
 #include "Sample.h"
 #include "Square.h"
 #include "Circle.h"
+#include "Target.h"
 
 
 class Application : public QApplication
@@ -16,13 +17,12 @@ public:
     ~Application ();
 
     int exec ();
-signals:
-    void printNext ();
 private slots:
     void slotAddSample (const SampleData &data);
 private:
-    Interface *_interface {nullptr};
     QList<Sample*> _list;
+    Interface *_interface {nullptr};
+    Target *_target {nullptr};
 };
 
 #endif // APPLICATION_H

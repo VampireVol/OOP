@@ -21,6 +21,7 @@ SOURCES += \
     Rectangle.cpp \
     Sample.cpp \
     Square.cpp \
+    Target.cpp \
     main.cpp \
     Interface.cpp \
     Application.cpp
@@ -32,7 +33,8 @@ HEADERS += \
     Rectangle.h \
     Sample.h \
     Square.h \
-    Application.h
+    Application.h \
+    Target.h
 
 FORMS += \
     Interface.ui

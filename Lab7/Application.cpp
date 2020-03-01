@@ -3,10 +3,16 @@
 Application::Application (int &argc, char **argv)
     : QApplication (argc, argv)
     , _interface (new Interface)
+    , _target (new Target (&_list, this))
 
 {
-    connect (_interface, &Interface::sendData,
+    connect (_interface, &Interface::sendSampleData,
              this, &Application::slotAddSample);
+    connect (_interface, &Interface::sendCheckData,
+             _target, &Target::calcResult);
+    connect (_target, &Target::sendResult,
+             _interface, &Interface::setResult);
+
 }
 
 Application::~Application ()

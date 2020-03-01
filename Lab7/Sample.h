@@ -12,7 +12,7 @@ struct SampleData
         Circle
     };
 
-    SampleData (const Type &type, const QPointF &pivot, const double &a, const double &b);
+    SampleData (const Type &type, const QPointF &pivot, const double &a, const double &b = 0);
 
     Type _type;
     QPointF _pivot;

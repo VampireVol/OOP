@@ -56,7 +56,7 @@ QString Polygon::toString ()
                 .arg(i)
                 .arg (_edge[i]);
     }
-    for (int i = 0; i < _edge.size (); ++i)
+    for (int i = 0; i < _angle.size (); ++i)
     {
         str += QString("angle[%1]: %2 ")
                 .arg(i)

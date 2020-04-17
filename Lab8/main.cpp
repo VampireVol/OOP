@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     figs.append (new Quadrangle (6, 7, 5, 45, 30));
     figs.append (new Parallelogram (4, 6, 60));
     QList<double> edgPoly {6, 6, 6, 6, 6};
-    QList<double> angPoly {120, 120, 120, 120, 120};
+    QList<double> angPoly {120, 120, 120, 120};
     figs.append (new Polygon (edgPoly, angPoly));
     for (Polygon *fig : figs)
     {
